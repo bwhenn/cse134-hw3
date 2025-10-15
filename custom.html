@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customs</title>
+    <style>
+        semantic-el {
+            display: inline-block;
+            border: 2px solid #444;
+            border-radius: 12px;
+            padding: 0.25em 0.6em;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Semantic Element</h2>
+    <p>
+        <semantic-el>Information</semantic-el>
+        <semantic-el>Completed</semantic-el>
+    </p>
+
+    <h2>Hello World Element</h2>
+    <hello-console></hello-console>
+
+
+    <script>
+        class HelloConsole extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello world!");
+        }
+        }
+        customElements.define('hello-console', HelloConsole);
+    </script>
+</body>
+</html>

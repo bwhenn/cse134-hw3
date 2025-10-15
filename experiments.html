@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+</head>
+<body>
+    <template>
+        <h2>Flower</h2>
+        <img src="surfer.jpg" width="214" height="204">
+    </template> 
+
+    <picture>
+        <source
+            srcset="surfer.jpg"
+            media="(orientation: portrait)" />
+       <img src="painted-hand.jpg" alt="" />
+    </picture>
+
+    <audio controls src="t-rex-roar.mp3"></audio>
+
+    <video controls width="300">
+        <source src="flower.webm" type="video/webm" />
+         <source src="flower.mp4" type="video/mp4" />
+    </video>
+
+    <canvas width="120" height="120">
+    An alternative text describing what your canvas displays.
+    </canvas>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
+</body>
+</html>

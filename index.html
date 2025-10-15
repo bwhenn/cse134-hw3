@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { border: 2px solid black; }
+    header { border: 2px solid blue; }
+    footer { border: 2px solid green; }
+  </style>
+</head>
+
+<body>
+  <!-- Header / Introduction -->
+  <header>
+    <h1><b>Brian Wen</b></h1>
+    <p><i>Student of Computer Science</i></p>
+    <nav>
+      <ul>
+        <li><a href="#projects"><em>Projects</em></a></li>
+        <li><a href="#experience"><em>Experience</em></a></li>
+        <li><a href="#contact"><em>Contact</em></a></li>
+        <li><a href="custom.html"><em>Custom Elements</em></a></li>
+        <li><a href="experiments.html"><em>Experiments</em></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <picture>
+        <source
+            srcset="surfer.jpg" />
+        <img src="painted-hand.jpg" alt="" />
+      </picture>
+      <ul>
+        <li>
+          <div>
+            <strong>Developer Journal</strong> Local-first web app with reusable web components.
+            <br>
+            <span>Web</span><span>Perf</span><span>Offline</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Route-Mood Playlist Generator</strong> Curates Spotify playlists from travel routes.
+            <br>
+            <span>Python</span><span>API</span><span">Music</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol>
+        <li><b>Ingram Micro</b> Database Administrator Intern <i>(Summer 2024)</i></li>
+        <li><b>Mt. SAC</b> Teaching Assistant <i>(2023)</i></li>
+      </ol>
+
+      <article>
+        <h3>Featured Role</h3>
+        <p>At Ingram Micro, I optimized SQL queries and automated reports, improving system efficiency by <strong>30%</strong>.</p>
+      </article>
+    </section>
+
+    <!-- Optional visual/interactive content -->
+    <section>
+      <h2>Demo Visualization</h2>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="skyblue" />
+      </svg>
+      <br>
+      <iframe src="https://www.example.com" width="300" height="200" title="External demo"></iframe>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+      </fieldset>
+
+      <label for="taskProgress">Portfolio Completion:</label>
+      <progress id="taskProgress" value="80" max="100">80%</progress><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <dialog id="thankyou">
+      <p><strong>Thank you!</strong> Your message has been sent successfully.</p>
+      <button>Close</button>
+    </dialog>
+
+    <noscript>
+      <p>Please enable JavaScript.</p>
+    </noscript>
+  </footer>
+
+  <script>
+  </script>
+</body>
+</html>
