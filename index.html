@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio Site</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { border: 2px solid black; }
-    header { border: 2px solid blue; }
-    footer { border: 2px solid green; }
-  </style>
 </head>
 
 <body class="container">
@@ -35,10 +30,24 @@
       <h2>Projects</h2>
       <picture>
         <source
-            srcset="surfer.jpg">
-        <img src="painted-hand.jpg" alt="">
+        srcset="samsung-memory-us-7kEP4yJY5Bo-unsplash.jpg"
+        type="image/jpeg"
+        media="(max-width: 480px)"
+        />
+        <source
+        srcset="samsung-memory-us-7kEP4yJY5Bo-unsplash.jpg"
+        type="image/jpeg"
+        media="(max-width: 1024px)"
+        />
+        <img
+        src="samsung-memory-us-7kEP4yJY5Bo-unsplash.jpg"
+        alt="Person inserting an SD card into a laptop connected to an external SSD drive"
+        loading="lazy"
+        width="1600" height="900"
+        sizes="(max-width:480px) 100vw, (max-width:1024px) 92vw, 70rem"
+        />
       </picture>
-      <ul>
+      <ul class="cards">
         <li>
           <div class="card">
             <strong>Developer Journal</strong> — Local-first web app with reusable web components.
@@ -59,6 +68,30 @@
     <!-- Experience -->
     <section id="experience" class="section experience-section">
       <h2>Experience</h2>
+      <div class="experience-images">
+        <figure>
+        <img
+        src="andrew-neel-cckf4TsHAuw-unsplash.jpg"
+        alt="Laptop, notebook, and coffee mug on wooden desk"
+        loading="lazy"
+        width="1400" height="933"
+        sizes="(max-width:480px) 100vw, (max-width:1024px) 48vw, 33vw"
+        />
+        <figcaption>Workspace setup</figcaption>
+        </figure>
+
+
+        <figure>
+        <img
+        src="christin-hume-Hcfwew744z4-unsplash.jpg"
+        alt="Person typing on a laptop wearing a mustard sweater"
+        loading="lazy"
+        width="1400" height="933"
+        sizes="(max-width:480px) 100vw, (max-width:1024px) 48vw, 33vw"
+        />
+        <figcaption>Focused work session</figcaption>
+        </figure>
+      </div>
       <ol>
         <li><b>Ingram Micro</b> Database Administrator Intern <i>(Summer 2024)</i></li>
         <li><b>Mt. SAC</b> Teaching Assistant <i>(2023)</i></li>
